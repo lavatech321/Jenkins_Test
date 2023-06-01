@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Create a user
+      user: 
+        name: raman
+        state: present
+    - name: Install a package
+      yum: 
+        name: git
+        state: present
+...
